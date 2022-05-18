@@ -1,0 +1,13 @@
+{
+    "name": "todo_list",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/todo_list",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/todo_list",
+        "source": "http://cgit.drupalcode.org/todo_list"
+    }
+}

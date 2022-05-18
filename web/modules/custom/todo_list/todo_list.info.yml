@@ -1,0 +1,5 @@
+name: 'Todo List'
+type: module
+description: 'My Awesome Module'
+core_version_requirement: 9.x
+package: 'Custom'
