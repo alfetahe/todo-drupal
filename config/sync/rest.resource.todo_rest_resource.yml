@@ -1,0 +1,18 @@
+uuid: 624da7a9-581e-4d27-9815-38b734f92c73
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - todo_list
+id: todo_rest_resource
+plugin_id: todo_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

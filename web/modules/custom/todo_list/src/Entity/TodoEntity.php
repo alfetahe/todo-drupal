@@ -2,6 +2,7 @@
 
 namespace Drupal\todo_list\Entity;
 
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\ContentEntityBase;
@@ -130,6 +131,29 @@ class TodoEntity extends ContentEntityBase implements TodoEntityInterface {
   public function setOwner(UserInterface $account) {
     $this->set('user_id', $account->id());
     return $this;
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getDescription() {
+    return $this->get('field_description')->value;
+  }
+
+  /**
+   * @return string|null
+   */
+  public function getDueDate() {
+    $date = $this->get('field_due_date')->value;
+
+    if ($date) {
+      $dateObject = new DrupalDateTime($date, new \DateTimeZone('UTC'));
+      $dateObject->setTimezone(new \DateTimeZone('Europe/Helsinki'));
+
+      return $dateObject->format('d/m/Y H:i:s');
+    }
+
+    return NULL;
   }
 
   /**

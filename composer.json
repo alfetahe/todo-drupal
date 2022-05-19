@@ -21,6 +21,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/restui": "^1.20",
         "drush/drush": "^11.0"
     },
     "conflict": {
