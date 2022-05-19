@@ -1,0 +1,20 @@
+uuid: a1409190-474a-416f-964e-1aa33b166494
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - todo_list
+id: todo_entity.field_due_date
+field_name: field_due_date
+entity_type: todo_entity
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

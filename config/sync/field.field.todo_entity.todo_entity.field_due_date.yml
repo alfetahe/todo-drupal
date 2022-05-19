@@ -1,0 +1,24 @@
+uuid: 3c8dfb1e-fd41-4669-91bd-f2d26779f490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.todo_entity.field_due_date
+  module:
+    - datetime
+    - todo_list
+id: todo_entity.todo_entity.field_due_date
+field_name: field_due_date
+entity_type: todo_entity
+bundle: todo_entity
+label: 'Due date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

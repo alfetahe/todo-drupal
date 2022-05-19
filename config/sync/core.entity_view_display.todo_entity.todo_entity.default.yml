@@ -1,0 +1,48 @@
+uuid: d1923b77-f309-49d7-9d13-a172e016ddf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.todo_entity.todo_entity.field_description
+    - field.field.todo_entity.todo_entity.field_due_date
+  module:
+    - datetime
+    - todo_list
+    - user
+id: todo_entity.todo_entity.default
+targetEntityType: todo_entity
+bundle: todo_entity
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_due_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

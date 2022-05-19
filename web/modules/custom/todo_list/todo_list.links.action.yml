@@ -1,0 +1,5 @@
+entity.todo_entity.add_form:
+  route_name: entity.todo_entity.add_form
+  title: 'Add Todo entity'
+  appears_on:
+    - entity.todo_entity.collection

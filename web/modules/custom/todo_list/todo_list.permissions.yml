@@ -1,0 +1,20 @@
+add todo entity entities:
+  title: 'Create new Todo entity entities'
+
+administer todo entity entities:
+  title: 'Administer Todo entity entities'
+  description: 'Allow to access the administration form to configure Todo entity entities.'
+  restrict access: true
+
+delete todo entity entities:
+  title: 'Delete Todo entity entities'
+
+edit todo entity entities:
+  title: 'Edit Todo entity entities'
+
+view published todo entity entities:
+  title: 'View published Todo entity entities'
+
+view unpublished todo entity entities:
+  title: 'View unpublished Todo entity entities'
+

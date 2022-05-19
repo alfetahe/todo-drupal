@@ -1,0 +1,19 @@
+uuid: d1d33401-a74b-4a0b-9b84-f44425348db6
+langcode: en
+status: true
+dependencies:
+  module:
+    - todo_list
+id: todo_entity.field_description
+field_name: field_description
+entity_type: todo_entity
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
